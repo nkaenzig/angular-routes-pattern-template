@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ComplexComponent } from './complex.component';
-import { EagerSubComponent } from './eager-sub/eager-sub.component';
-import { LazySubComponent } from './lazy-sub/lazy-sub.component';
 import { EagerSubModule } from './eager-sub/eager-sub.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -11,6 +10,7 @@ import { EagerSubModule } from './eager-sub/eager-sub.module';
   imports: [
     CommonModule,
     EagerSubModule,
+    RouterModule
   ]
 })
 export class ComplexModule { }
